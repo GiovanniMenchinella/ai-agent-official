@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -107,7 +106,7 @@ const CookiePolicy = () => {
               Se hai domande sulla nostra cookie policy, contattaci:
             </p>
             <ul className="list-disc ml-6 mb-4 text-ai-gray">
-              <li>Via email: info@aigentic.it</li>
+              <li>Via email: info@potrai.com</li>
             </ul>
           </section>
         </div>
