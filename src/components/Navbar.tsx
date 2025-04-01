@@ -48,7 +48,7 @@ const Navbar = () => {
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center">
+        <div className="flex items-center w-1/3">
           <Link to="/" className="flex items-center">
             <div className="w-8 h-8 rounded-md bg-[#818fff] flex items-center justify-center mr-3">
               <div className="w-4 h-4 bg-ai-white rounded-sm"></div>
@@ -57,16 +57,18 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/" className="text-ai-white hover:text-[#818fff] transition-colors">Home</Link>
-          {user && (
-            <Link to="/agents" className="text-ai-white hover:text-[#818fff] transition-colors">Agenti</Link>
-          )}
+        {/* Desktop Navigation - Centered */}
+        <nav className="hidden md:flex items-center justify-center w-1/3">
+          <div className="flex items-center space-x-8">
+            <Link to="/" className="text-ai-white hover:text-[#818fff] transition-colors">Home</Link>
+            {user && (
+              <Link to="/agents" className="text-ai-white hover:text-[#818fff] transition-colors">Agenti</Link>
+            )}
+          </div>
         </nav>
 
         {/* Call to Action Buttons */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center justify-end w-1/3 space-x-4">
           {user ? (
             <>
               <div className="text-ai-gray mr-2">

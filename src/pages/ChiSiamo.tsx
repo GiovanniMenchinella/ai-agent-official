@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,12 +7,14 @@ const ChiSiamo = () => {
   return (
     <div className="min-h-screen overflow-hidden">
       <SplashCursor 
-        COLOR_UPDATE_SPEED={5}
-        SPLAT_RADIUS={0.3}
-        SPLAT_FORCE={6000}
-        SHADING={true}
+        COLOR_UPDATE_SPEED={0}
+        SPLAT_RADIUS={0.1}
+        SPLAT_FORCE={2000}
+        SHADING={false}
         BACK_COLOR={{ r: 0.15, g: 0.1, b: 0.3 }}
-        CURL={20}
+        CURL={0}
+        DENSITY_DISSIPATION={4.5}
+        VELOCITY_DISSIPATION={2.5}
       />
       <Navbar />
       

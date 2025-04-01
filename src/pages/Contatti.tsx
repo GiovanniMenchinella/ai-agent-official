@@ -22,12 +22,14 @@ const Contatti = () => {
   return (
     <div className="min-h-screen overflow-hidden">
       <SplashCursor 
-        COLOR_UPDATE_SPEED={5}
-        SPLAT_RADIUS={0.3}
-        SPLAT_FORCE={6000}
-        SHADING={true}
+        COLOR_UPDATE_SPEED={0}
+        SPLAT_RADIUS={0.1}
+        SPLAT_FORCE={2000}
+        SHADING={false}
         BACK_COLOR={{ r: 0.15, g: 0.1, b: 0.3 }}
-        CURL={20}
+        CURL={0}
+        DENSITY_DISSIPATION={4.5}
+        VELOCITY_DISSIPATION={2.5}
       />
       <Navbar />
       
@@ -35,38 +37,7 @@ const Contatti = () => {
         <div className="max-w-5xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-8 text-center">Contattaci</h1>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-            {/* Contact form */}
-            <div className="glass rounded-2xl p-8">
-              <h2 className="text-2xl font-semibold mb-6 text-[#9b87f5]">Scrivici un messaggio</h2>
-              
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="block text-sm font-medium text-ai-gray">Nome</label>
-                  <Input id="name" placeholder="Il tuo nome" required />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="email" className="block text-sm font-medium text-ai-gray">Email</label>
-                  <Input id="email" type="email" placeholder="La tua email" required />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="block text-sm font-medium text-ai-gray">Oggetto</label>
-                  <Input id="subject" placeholder="Oggetto del messaggio" required />
-                </div>
-                
-                <div className="space-y-2">
-                  <label htmlFor="message" className="block text-sm font-medium text-ai-gray">Messaggio</label>
-                  <Textarea id="message" placeholder="Il tuo messaggio" rows={5} required />
-                </div>
-                
-                <Button type="submit" className="w-full bg-[#818fff] hover:bg-ai-blue">
-                  Invia Messaggio
-                </Button>
-              </form>
-            </div>
-            
+          <div className="max-w-2xl mx-auto">
             {/* Contact information */}
             <div className="space-y-8">
               <div className="glass rounded-2xl p-8">

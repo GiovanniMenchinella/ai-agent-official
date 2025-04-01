@@ -1,4 +1,3 @@
-
 import React from 'react'
 import FeatureCard from './FeatureCard'
 import ButtonGlow from './ButtonGlow'
@@ -48,7 +47,7 @@ const Features = () => {
             title="Risorse Illimitate"
             description="Crea senza limiti ogni risorsa necessaria per la tua azienda, in modo semplice e totalmente libero."
             icon={Phone}
-            tags={["iOS & Android", "Asset illimitati"]}
+            tags={["Asset illimitati"]}
           />
         </div>
 
@@ -61,9 +60,9 @@ const Features = () => {
             <p className="text-ai-white/80 mb-6">
               Progettato su misura per le esigenze specifiche della tua azienda, con competenze e conoscenze settoriali rilevanti.
             </p>
-            <div className="flex justify-center md:justify-start">
+            <div className="flex justify-center md:justify-start relative z-10">
               <a href="mailto:info@potrai.com">
-                <ButtonGlow className="bg-ai-white text-ai-purple hover:bg-ai-lightgray hover:text-ai-blue">
+                <ButtonGlow className="bg-[#818fff] text-white hover:bg-ai-blue hover:text-white font-medium text-lg px-6 py-3">
                   <Mail className="mr-2 w-5 h-5" />
                   Contattaci ora
                 </ButtonGlow>

@@ -1,4 +1,3 @@
-
 export function HSVtoRGB(h: number, s: number, v: number) {
   let r, g, b, i, f, p, q, t;
   i = Math.floor(h * 6);
@@ -49,11 +48,11 @@ export function HSVtoRGB(h: number, s: number, v: number) {
 }
 
 export function generateColor() {
-  let c = HSVtoRGB(Math.random(), 1.0, 1.0);
-  c.r *= 0.15;
-  c.g *= 0.15;
-  c.b *= 0.15;
-  return c;
+  return {
+    r: 1.0,
+    g: 1.0,
+    b: 1.0
+  };
 }
 
 export function wrap(value: number, min: number, max: number) {
